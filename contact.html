@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniDark</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Jost", serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 2em;
+            font-weight: 700;
+            padding: 0px 40px;
+            color: #ff6f61;
+        }
+
+        header nav {
+            display: flex;
+            padding: 0px 40px;
+            gap: 40px;
+        }
+
+        header nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #ff6f61;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .anime-card {
+            background-color: #1f1f1f;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+
+        .anime-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .anime-card .info {
+            padding: 10px;
+        }
+
+        .anime-card .info h3 {
+            font-size: 1.1em;
+            margin: 0 0 10px;
+        }
+
+        .anime-card .info p {
+            font-size: 0.9em;
+            margin: 0;
+            color: #bbbbbb;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 20px;
+            margin-top: 650px;
+        }
+
+        footer p {
+            margin: auto;
+            color: #bbbbbb;
+        }
+
+        @media (max-width: 612px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+         }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <div class="logo">AniDark</div>
+        </a>
+        <nav>
+            <a href="index.html">Новинки</a>
+            <a href="#">Контакты</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="grid-container">
+            <!-- Карточки аниме -->
+            <div class="anime-card">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" style="text-decoration: none; color: inherit;">
+                <div class="info">
+                    <h3>Test@test.com</h3>
+                    <p>Поддержка</p>
+                </div>
+            </a>
+            </div>
+
+            <!-- Добавьте больше карточек при необходимости -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Аниме Кинотеатр. Все права защищены.</p>
+    </footer>
+</body>
+</html>
